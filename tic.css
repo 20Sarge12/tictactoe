@@ -7,3 +7,19 @@ button {
 #matrix {
   margin: 30% 0px 0px 45%;
 }
+
+.playerProfiles{
+    display: flex;
+}
+
+.player1Div{
+    width: 50px;
+    height: 50px;
+}
+
+.player2Div{
+    margin-left: 90%;
+    width: 50px;
+    height: 50px;
+}
+
