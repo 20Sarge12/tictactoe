@@ -1,25 +1,30 @@
 button {
-    background-color: blue;
+    /* 2 */
     height: 50px;
     width: 50px;
 }
+
+div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+#matrix button {
+    background-color: blue;
+}
+
+.playerTurnDiv {}
 
 #matrix {
-  margin: 30% 0px 0px 45%;
+    margin: 20% 0px 0px 45%;
 }
 
-.playerProfiles{
+.playerProfiles {
     display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.player1Div{
-    width: 50px;
-    height: 50px;
-}
+.player1Div {}
 
-.player2Div{
-    margin-left: 90%;
-    width: 50px;
-    height: 50px;
-}
-
+.player2Div {}
