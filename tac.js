@@ -15,19 +15,23 @@ var activePlayer ={
 } 
 
 function btnClick(event){
+    //player turn name change
+    document.querySelector(".playerTurn").textContent = activePlayer[Object.keys(activePlayer)[0]];
+    //player sign change
     document.querySelector(`#${event.target.id}`).textContent = activePlayer[Object.keys(activePlayer)[1]];
     var id = (event.target.id+"").split("btn")[1];
     console.log(id);
-    matrixJs[id.split("")[0]][id.split("")[1]]= 0;
+    matrixJs[id.split("")[0]][id.split("")[1]]= activePlayer[Object.keys(activePlayer)[1]];
     console.log(matrixJs);
     //changeActivePlayerFunction();
 }
 
 function changeActivePlayerFunction(){
-
+    //change active player after every turn
 }
 
 function funcStart(){
+    //game initialising function
      player1Obj.player1Name = window.prompt("Enter player1's name");
      player2Obj.player2Name = window.prompt("Enter player2's name");
      document.querySelector(".player1Div p").textContent = player1Obj.player1Name;
